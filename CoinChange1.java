@@ -1,20 +1,23 @@
 public class CoinChange1 {
     // Recursion Approach
     // public int coinChange(int[] coins, int amount) {
-    // return helper(coins,0,amount,0);
+    //     return helper(coins, 0, amount, 0);
     // }
-    // private int helper(int[] coins,int idx, int amount,int coinsUsed){
-    // //base
-    // if(amount==0)
-    // return coinsUsed;
-    // if(amount<0 || idx==coins.length)
-    // return -1;
-    // //logic
-    // int case1=helper(coins,idx,amount-coins[idx],coinsUsed+1);
-    // int case2=helper(coins,idx+1,amount,coinsUsed);
-    // if(case1==-1) return case2;
-    // if(case2==-1) return case1;
-    // return Integer.min(case1,case2);
+
+    // private int helper(int[] coins, int idx, int amount, int coinsUsed) {
+    //     // base
+    //     if (amount == 0)
+    //         return coinsUsed;
+    //     if (amount < 0 || idx == coins.length)
+    //         return -1;
+    //     // logic
+    //     int case1 = helper(coins, idx, amount - coins[idx], coinsUsed + 1);
+    //     int case2 = helper(coins, idx + 1, amount, coinsUsed);
+    //     if (case1 == -1)
+    //         return case2;
+    //     if (case2 == -1)
+    //         return case1;
+    //     return Integer.min(case1, case2);
     // }
 
     // Using DP- Tabulation
