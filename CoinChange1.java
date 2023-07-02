@@ -1,5 +1,9 @@
+// Time Complexity :O(m*n)
+// Space Complexity : O(m*n)
+// Did this code successfully run on Leetcode : Yes
+// Any problem you faced while coding this :No
 public class CoinChange1 {
-    // Recursion Approach
+    // Recursion Approach O(2^(M+N))
     // public int coinChange(int[] coins, int amount) {
     //     return helper(coins, 0, amount, 0);
     // }
